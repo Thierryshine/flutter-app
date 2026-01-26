@@ -28,6 +28,14 @@ jobs:
           channel: 'stable'
           cache: true
 
+      - name: Disable Flutter analytics and CLI animations
+        run: |
+          flutter config --no-analytics
+          flutter config --no-cli-animations
+
+      - name: Flutter doctor (diagnostics)
+        run: flutter doctor -v
+
       - name: Install dependencies
         run: flutter pub get
 
