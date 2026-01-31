@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false, //Enlever la mention debug
+      theme: ThemeData(fontFamily: 'Batman'),
       home: const HomePage(),
     );
   }

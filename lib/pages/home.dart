@@ -16,7 +16,9 @@ class HomePage extends StatelessWidget {
           ),
         ),
         centerTitle: true,
-      ),
+        leading: , //La partie gauche de l'AppBar
+        actions: [], //La partie droite de l'AppBar
+        ),
     );
   }
 }
